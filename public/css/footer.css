@@ -1,0 +1,138 @@
+.footer {
+    padding: 60px 20px 0 20px;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    background-color: var(--footer-color);
+}
+
+.columnas {
+    padding: 20px 0 20px 0;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    transition: var(--tran-05);
+}
+
+li {
+    padding-top: 10px;
+    color: var(--black-light-color);
+}
+
+ul li a {
+    text-decoration: none;
+    color: var(--black-light-color);
+}
+
+li:last-child {
+    border-bottom: none;
+}
+
+.title {
+    font-size: 24px;
+    font-weight: 600;
+    color: var(--text-color);
+}
+
+.text {
+    margin-top: 10px;
+    color: var(--black-light-color);
+}
+
+.icon {
+    padding: 0 10px 0 10px;
+}
+
+.logo {
+    width: 35%;
+}
+
+.redes {
+    padding-top: 10px;
+    font-size: 30px;
+}
+
+.redes li {
+    display: inline;
+    padding-left: 3px;
+    padding-right: 3px;
+}
+
+.copyright a {
+    text-decoration: none;
+    color: var(--black-light-color);
+}
+.copyright {
+    padding-top: 100px;
+    text-align: center;
+    color: var(--black-light-color);
+}
+
+.contenedor-footer {
+    position: relative;
+    left: 250px;
+    background-color: var(--footer-color);
+    width: calc(100% - 250px);
+    padding: 10px 14px;
+    transition: var(--tran-05);
+}
+nav.close ~ .contenedor-footer {
+    left: 73px;
+    width: calc(100% - 73px);
+}
+
+@media (max-width: 1000px) {
+    nav {
+        width: 73px;
+    }
+    nav.close {
+        width: 250px;
+    }
+    nav li a .link-name {
+        opacity: 0;
+        pointer-events: none;
+    }
+    nav.close li a .link-name {
+        opacity: 1;
+        pointer-events: auto;
+    }
+    nav ~ .contenedor-footer {
+        left: 73px;
+        width: calc(100% - 73px);
+    }
+    nav.close ~ .contenedor-footer {
+        left: 250px;
+        width: calc(100% - 250px);
+    }
+}
+
+@media (max-width: 600px) {
+    nav {
+        width: 0px;
+    }
+    nav.close {
+        width: 73px;
+    }
+    nav li a .link-name {
+        opacity: 0;
+        pointer-events: none;
+    }
+    nav.close li a .link-name {
+        opacity: 0;
+        pointer-events: none;
+    }
+    nav ~ .contenedor-footer {
+        left: 0;
+        width: 100%;
+    }
+    nav.close ~ .contenedor-footer {
+        left: 73px;
+        width: calc(100% - 73px);
+    }
+}

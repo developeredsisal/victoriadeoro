@@ -1,0 +1,233 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+.login {
+    height: 100vh;
+    width: 100%;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.restablecer {
+    height: 100vh;
+    width: 100%;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.restablecer .form {
+    position: relative;
+    border-radius: 5px;
+    width: 360px;
+    height: 430px;
+    background-color: #ffffff;
+    padding: 75px 40px 40px 40px;
+}
+
+.form {
+    position: relative;
+    border-radius: 5px;
+    width: 365px;
+    height: 455px;
+    background-color: var(--panel-color);
+    padding: 40px;
+}
+
+.form h2 {
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+    display: block;
+    font-size: 1.5em;
+    padding-bottom: 19px;
+    margin-inline-start: 0px;
+    font-weight: bold;
+}
+
+.invalid-feedback {
+    top: 172px;
+    right: 7px;
+    display: block;
+    width: 100%;
+    margin-top: 5px;
+    font-size: 85%;
+    text-align: center;
+    color: #ef1f33;
+    animation: shake 0.2s 2;
+}
+
+.password-input-container {
+    display: flex;
+    align-items: center;
+}
+
+.container {
+    position: relative;
+}
+
+label {
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.label-pass {
+    padding-top: 10px;
+}
+
+.form img {
+    position: absolute;
+    cursor: pointer;
+    height: 20px;
+    right: 53px;
+    margin-bottom: 10px;
+}
+
+.form input {
+    outline: 0;
+    background: #f2f2f2;
+    border-radius: 4px;
+    width: 100%;
+    border: 0;
+    margin: 5px 0 15px 0;
+    padding: 15px;
+    font-size: 14px;
+}
+
+.form input:focus {
+    box-shadow: 0 0 5px 0 rgb(91, 117, 189);
+}
+
+.form button {
+    outline: 0;
+    background: #0093ff;
+    width: 100%;
+    border: 0;
+    margin-top: 20px;
+    border-radius: 3px;
+    padding: 15px;
+    color: #ffffff;
+    font-size: 15px;
+    -webkit-transition: all 0.3 ease;
+    transition: all 0.4s ease-in-out;
+    cursor: pointer;
+}
+
+.form button:hover,
+.form button:active,
+.form button:focus {
+    background: black;
+    color: #ffffff;
+}
+
+.message {
+    margin: 16px 0;
+    text-align: center;
+}
+
+.form .message a {
+    font-size: 14px;
+    font-weight: 500;
+    color: #0093ff;
+    text-decoration: none;
+}
+
+.form-control.is-invalid, .was-validated .form-control:invalid {
+    background-image: none;
+}
+
+@keyframes shake {
+    25% {
+        translate: 6px 0;
+    }
+    50% {
+        translate: -6px 0;
+    }
+    75% {
+        translate: 6px 0;
+    }
+}
+
+/* Formulario de registro */
+.registro {
+    height: 100vh;
+    width: 100%;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.form-registro {
+    position: relative;
+    border-radius: 5px;
+    width: 365px;
+    height: 595px;
+    background-color: var(--panel-color);
+    padding: 40px;
+}
+
+.form-registro input {
+    outline: 0;
+    background: #f2f2f2;
+    border-radius: 4px;
+    width: 100%;
+    border: 0;
+    margin: 5px 0 0px 0;
+    padding: 15px;
+    font-size: 14px;
+}
+
+.form-registro .message a {
+    font-size: 14px;
+    font-weight: 500;
+    color: #0093ff;
+    text-decoration: none;
+}
+
+.form-registro button {
+    outline: 0;
+    background: #0093ff;
+    width: 100%;
+    border: 0;
+    margin-top: 30px;
+    border-radius: 3px;
+    padding: 15px;
+    color: #ffffff;
+    font-size: 15px;
+    -webkit-transition: all 0.3 ease;
+    transition: all 0.4s ease-in-out;
+    cursor: pointer;
+}
+
+.form-registro button:hover,
+.form-registro button:active,
+.form-registro button:focus {
+    background: black;
+    color: #ffffff;
+}
+
+.form-registro input:focus {
+    box-shadow: 0 0 5px 0 rgb(91, 117, 189);
+}
+
+.form-registro h2 {
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+    display: block;
+    font-size: 1.5em;
+    padding-bottom: 19px;
+    margin-inline-start: 0px;
+    font-weight: bold;
+}
+
+.registro .alerta {
+    width: 100%;
+    margin-top: 15px;
+    font-size: 85%;
+    text-align: center;
+    color: #dc3545;
+}
